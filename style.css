@@ -5,3 +5,7 @@ nav  {
 #menulinks {
     display: flex;
 }
+
+#menulinks p {
+    padding: 5px;
+}
