@@ -1,20 +1,36 @@
+
+
 nav  {
     display: flex;
+    border-bottom: solid black 1px;
 }
 
 #menulinks {
     display: flex;
-    margin-left: auto;
-    margin-right: 0;
+    width: 55%;
+    justify-content: flex-end;
+}
+
+#menulinks div {
+    display: flex;
+    width: 100%;
 }
 
 #menulinks p {
-    padding-right: 5%;
-    padding-left: 5%;
+    margin-right: auto;
  
 }
 
 #navsearchbar {
     padding-top: 16px;
-    padding-left: 10%;
+    width: 15%;
+
+}
+
+#searchinternalnav {
+    float: right;
+}
+
+#navlogo {
+    width: 30%;
 }
