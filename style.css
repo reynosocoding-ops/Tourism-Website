@@ -9,6 +9,12 @@ nav  {
 }
 
 #menulinks p {
-    padding: 5px;
+    padding-right: 5%;
+    padding-left: 5%;
  
+}
+
+#navsearchbar {
+    padding-top: 16px;
+    padding-left: 10%;
 }
