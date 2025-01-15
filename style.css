@@ -59,6 +59,14 @@ footer {
     text-align: center;
 }
 
+#menulinksinnercontainer a {
+    text-decoration: none;
+    color: black;
+}
+
+#footerContactInfo h3 {
+    text-align: center;
+}
 
 #newsletterContainer p:first-child {
     font-size: x-large;
