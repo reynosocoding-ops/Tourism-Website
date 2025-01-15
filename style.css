@@ -36,6 +36,7 @@ nav  {
 
 #searchinternalnav {
     float: right;
+    margin-right: 20px;
 }
 
 #navlogo {
@@ -85,4 +86,8 @@ footer {
 #footerContactInfo {
     margin-left: auto;
     margin-right: 5%;
+}
+
+#navMagnifyingGlass {
+    width: 20px;
 }
