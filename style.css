@@ -1,5 +1,7 @@
 
-
+p {
+    font-family: sans-serif;
+}
 nav  {
     display: flex;
     border-bottom: solid black 1px;
@@ -62,6 +64,7 @@ footer {
 #menulinksinnercontainer a {
     text-decoration: none;
     color: black;
+    padding: 5px;
     
 }
 #menulinksinnercontainer a:hover {
