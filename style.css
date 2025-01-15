@@ -57,7 +57,7 @@ footer {
 #newsletterContainer {
     border: 1px solid black;
     margin-top: 5px;
-    padding: 5px;
+    padding: 5px 10px 15px 10px;
     text-align: center;
 }
 
