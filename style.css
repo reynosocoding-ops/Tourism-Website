@@ -18,12 +18,17 @@ nav  {
 
 #menulinks p {
     margin-right: auto;
- 
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 #navsearchbar {
-    padding-top: 16px;
     width: 15%;
+    margin-top: auto;
+    margin-bottom: auto;
 
 }
 
@@ -33,4 +38,11 @@ nav  {
 
 #navlogo {
     width: 30%;
+}
+
+#logo {
+    width: 120px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 30px;
 }
