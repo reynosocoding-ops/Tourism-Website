@@ -46,3 +46,7 @@ nav  {
     margin-bottom: 5%;
     margin-left: 30px;
 }
+
+footer {
+    border-top: 1px solid black;
+}
