@@ -104,3 +104,7 @@ footer {
 #newsLetterForm {
     position: absolute;
 }
+
+.highlight {
+    background-color: yellow;
+  }
