@@ -31,6 +31,7 @@ nav  {
     width: 15%;
     margin-top: auto;
     margin-bottom: auto;
+    display: flex;
 
 }
 
@@ -90,4 +91,5 @@ footer {
 
 #navMagnifyingGlass {
     width: 20px;
+
 }
