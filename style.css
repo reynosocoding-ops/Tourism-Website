@@ -108,3 +108,7 @@ footer {
 .highlight {
     background-color: yellow;
   }
+#searchsvgcontainer:active {
+    background-color: lightgray;
+    border: 1px solid gray;
+}
