@@ -126,3 +126,33 @@ main {
     box-shadow: 5px 5px rgba(0, 0, 0, 0.253);
     border-radius: 5px;
 }
+
+.homepageLinksContainer {
+    display: flex;
+}
+
+.homeImageContainer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.homeImageContainer h2 {
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+
+.homePageImageLinks {
+    width: 800px;
+    height: 600px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.253);
+    border-radius: 5px;
+
+}
+
+.homePageImageLinks:hover {
+    color: red;
+    box-shadow: none;
+    border: 1px solid black;
+    filter: brightness(60%);
+}
