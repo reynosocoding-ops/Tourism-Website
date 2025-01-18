@@ -156,3 +156,22 @@ main {
     border: 1px solid black;
     filter: brightness(60%);
 }
+
+.titleBar {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.thingsToDoSections {
+    display: flex;
+    justify-content: center;
+}
+
+.thingsToDoSections img {
+    width: 500px;
+}
+
+.thingsToDoSections * {
+    margin-left: auto;
+    margin-right: auto;
+}
