@@ -160,6 +160,7 @@ main {
 .titleBar {
     text-align: center;
     font-family: sans-serif;
+    font-size: 50px;
 }
 
 .thingsToDoSections {
@@ -185,7 +186,36 @@ main {
 }
 
 .activitiesDescription * {
-    word-break: break-all;
+    line-break: break-all;
     font-family: sans-serif;
     font-size: xx-large;
+}
+
+.restaurantCategories{
+    display: flex;
+    text-align: center;
+}
+
+.restaurantCategories h3{
+    font-family: sans-serif;
+    font-size: xx-large;
+    
+}
+.restaurantImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.253);
+}
+
+.restaurantInfo {
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.restaurantInfo p{
+    font-family: sans-serif;
+    font-weight: bold;
+    line-break: break-all;
 }

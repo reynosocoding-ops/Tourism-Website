@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+<body id="mainContent">
+  <header>
+    <nav>
+      <div id="navlogo">
+        <a href="index.html"><img src="images/Taniti.jpeg" alt="Taniti logo" id="logo"></a>
+      </div>
+
+      <div id="menulinks">
+        <div id="menulinksinnercontainer">
+          <p><a href="index.html">Home</a></p>
+          <p><a href="thingsToDo.html">Things To Do</a></p>
+          <p><a href="food.html">Food</a></p>
+          <p><a href="transportation.html">Transportation</a></p>
+          <p><a href="accommodations.html">Accommodations</a></p>
+          <p><a href="faq.html">FAQ</a></p>
+        </div>
+      </div>
+      <div id="navsearchbar">
+        <div id="searchinternalnav">
+          <input type="text" id="searchInput" placeholder="Search this page...">
+        </div>
+        <div id="searchsvgcontainer" onclick="search()">
+            <svg id="navMagnifyingGlass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+
+            </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="titleBar">Food</h1>
+    <br>
+    <h2 class="titleBar">Local Cuisine</h2>
+    <div class="restaurantCategories">
+        <div class="restaurantInfo">
+            <h3>Mama's Island Kitchen</h3>
+            <img class="restaurantImg" src="images\Local Food 1.jpg">
+            <p>(123)456-7890</p>
+            <p>14 Seabreeze Lane, Coral Reef Village, Taniti, 96789</p>
+        </div>
+        <div class="restaurantInfo">
+            <h3>Islander's Table</h3>
+            <img class="restaurantImg" src="images\Local Food 2.jpg">
+            <p>(123)456-7890</p>
+            <p>14 Seabreeze Lane, Coral Reef Village, Taniti, 96789</p>
+        </div>
+        <div class="restaurantInfo">
+            <h3>Gramma's Seaside Cafe</h3>
+            <img class="restaurantImg" src="images\Local Food 3.jpg">
+            <p>(123)456-7890</p>
+            <p>14 Seabreeze Lane, Coral Reef Village, Taniti, 96789</p>
+        </div>
+        <div class="restaurantInfo">
+            <h3>Papa Joe's Island Grill</h3>
+            <img class="restaurantImg" src="images\Local Food 4.jpg">
+            <p>(123)456-7890</p>
+            <p>14 Seabreeze Lane, Coral Reef Village, Taniti, 96789</p>
+        </div>
+        <div class="restaurantInfo">
+            <h3>Beachcomber's Bounty</h3>
+            <img class="restaurantImg" src="images\Local Food 5.jpg">
+            <p>(123)456-7890</p>
+            <p>14 Seabreeze Lane, Coral Reef Village, Taniti, 96789</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2 class="titleBar">American Style</h2>
+    <div class="restaurantCategories">
+        <div class="restaurantInfo">
+            <h3>The Beachcomber's Bounty</h3>
+            <img class="restaurantImg" src="images\American food 1.jpg">
+            <p>(123)456-7890</p>
+            <p>14 Seabreeze Lane, Coral Reef Village, Taniti, 96789</p>
+        </div>
+        <div class="restaurantInfo">
+            <h3>City Grill</h3>
+            <img class="restaurantImg" src="images\American food 2.jpg">
+            <p>(123)456-7890</p>
+            <p>14 Seabreeze Lane, Coral Reef Village, Taniti, 96789</p>
+        </div>
+        <div class="restaurantInfo">
+            <h3>The Culinary Collective</h3>
+            <img class="restaurantImg" src="images\American food 3.jpg">
+            <p>(123)456-7890</p>
+            <p>14 Seabreeze Lane, Coral Reef Village, Taniti, 96789</p>
+        </div>
+    </div>
+    
+    <hr>
+
+    <h2 class="titleBar">Pan Asian</h2>
+    <div class="restaurantCategories">
+        <div class="restaurantInfo">
+            <h3>Serenata Asiatique</h3>
+            <img class="restaurantImg" src="images\Pan Asian 1.jpg">
+            <p>(123)456-7890</p>
+            <p>14 Seabreeze Lane, Coral Reef Village, Taniti, 96789</p>
+        </div>
+        <div class="restaurantInfo">
+            <h3>Celestial Wok</h3>
+            <img class="restaurantImg" src="images\Pan Asian 2.jpg">
+            <p>(123)456-7890</p>
+            <p>14 Seabreeze Lane, Coral Reef Village, Taniti, 96789</p>
+        </div>
+        
+    </div>
+  </main>
+  <footer>
+    <div id="newsletterContainer">
+      <div id="newsLetterForm">
+        <p>Sign up for the newsletter</p>
+        <p>Stay up to date on Taniti news and events!</p>
+        <form>
+          <input type="text" id="emailSignUpEmail" value="enter email address" onclick="clearNewslettertextfield()">
+          <input type="button" value="submit" onclick="submitNewsletter()">
+        </form>
+      </div>
+      <div id="newslettersignupconfirmation">
+        <p>Thank you!</p>
+      </div>
+    </div>
+
+    <div id="footerContactInfo">
+      <h3>Get in touch</h3>
+      <p>Phone Number: (123) 456-7890</p>
+      <p>Email Address: TanitiTourism@taniti.gov</p>
+    </div>
+  </footer>
+</body>
+</html>
