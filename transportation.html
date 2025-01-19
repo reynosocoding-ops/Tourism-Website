@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+<body id="mainContent">
+  <header>
+    <nav>
+      <div id="navlogo">
+        <a href="index.html"><img src="images/Taniti.jpeg" alt="Taniti logo" id="logo"></a>
+      </div>
+
+      <div id="menulinks">
+        <div id="menulinksinnercontainer">
+          <p><a href="index.html">Home</a></p>
+          <p><a href="thingsToDo.html">Things To Do</a></p>
+          <p><a href="food.html">Food</a></p>
+          <p><a href="transportation.html">Transportation</a></p>
+          <p><a href="accommodations.html">Accommodations</a></p>
+          <p><a href="faq.html">FAQ</a></p>
+        </div>
+      </div>
+      <div id="navsearchbar">
+        <div id="searchinternalnav">
+          <input type="text" id="searchInput" placeholder="Search this page...">
+        </div>
+        <div id="searchsvgcontainer" onclick="search()">
+            <svg id="navMagnifyingGlass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+
+            </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <h1 class="titleBar">Transportation</h1>
+  <br>
+
+  <div id="transportToSection">
+    <img src="images\cruise ship.jpg">
+    <p>Almost all visitors arrive to Taniti by air, though some arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Taniti is served by a small airport that can accommodate small jets and propeller planes. Taniti is in the process of expanding the airport so larger jets will be able to land on the island within the next few years. </p>
+  </div>
+
+  <h2 class="titleBar">Traveling On Taniti</h2>
+
+  <div id="transportationCat">
+
+    <div class="transportationCat">
+      <h3>Bus</h3>
+      <img src="images\bus.jpg">
+      <p>Public buses serve Taniti City and run from 5 a.m. to 11 p.m. every day. Private buses serve the rest of the island.</p>
+    </div>
+
+    <div class="transportationCat">
+      <h3>Taxi</h3>
+      <img src="images\Taxi.jpg">
+      <p>Taxis are available in Taniti City</p>
+    </div>
+
+    <div class="transportationCat">
+      <h3>Rental Car</h3>
+      <img src="images\rental car.png">
+      <p>Rental cars can be rented from a local rental agency near the airport.</p>
+    </div>
+
+    <div class="transportationCat">
+      <h3>Rental Bike</h3>
+      <img src="images\rental bike.jpg">
+      <p>Bikes and helmets are available to rent from several vendors (helmets are required by law)</p>
+    </div>
+
+    <div class="transportationCat">
+      <h3>Walking</h3>
+      <img src="images\Walking.jpg">
+      <p>Taniti City is fairly flat and very walkable. Many tourists stay in the area surrounding Merriton Landing: this area is easy to explore on foot.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    <div id="newsletterContainer">
+      <div id="newsLetterForm">
+        <p>Sign up for the newsletter</p>
+        <p>Stay up to date on Taniti news and events!</p>
+        <form>
+          <input type="text" id="emailSignUpEmail" value="enter email address" onclick="clearNewslettertextfield()">
+          <input type="button" value="submit" onclick="submitNewsletter()">
+        </form>
+      </div>
+      <div id="newslettersignupconfirmation">
+        <p>Thank you!</p>
+      </div>
+    </div>
+
+    <div id="footerContactInfo">
+      <h3>Get in touch</h3>
+      <p>Phone Number: (123) 456-7890</p>
+      <p>Email Address: TanitiTourism@taniti.gov</p>
+    </div>
+  </footer>
+</body>
+</html>
