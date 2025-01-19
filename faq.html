@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+<body id="mainContent">
+  <header>
+    <nav>
+      <div id="navlogo">
+        <a href="index.html"><img src="images/Taniti.jpeg" alt="Taniti logo" id="logo"></a>
+      </div>
+
+      <div id="menulinks">
+        <div id="menulinksinnercontainer">
+          <p><a href="index.html">Home</a></p>
+          <p><a href="thingsToDo.html">Things To Do</a></p>
+          <p><a href="food.html">Food</a></p>
+          <p><a href="transportation.html">Transportation</a></p>
+          <p><a href="accommodations.html">Accommodations</a></p>
+          <p><a href="faq.html">FAQ</a></p>
+        </div>
+      </div>
+      <div id="navsearchbar">
+        <div id="searchinternalnav">
+          <input type="text" id="searchInput" placeholder="Search this page...">
+        </div>
+        <div id="searchsvgcontainer" onclick="search()">
+            <svg id="navMagnifyingGlass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+
+            </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <h1 class="titleBar">Frequently Asked Questions</h1>
+  <br>
+
+  <div class="faqConainer">
+    <p>What is the voltage for the power outlets?</p>
+    <p style="display: none;">Power outlets are 120 volts (the same as in the United States). 
+    </p>
+  </div>
+    <br>
+
+  <div class="faqConainer">
+    <p>What time can alcohol be purchased?</p>
+    <p style="display: none;">Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m. 
+    </p>
+  </div>
+  <br>
+
+  <div class="faqConainer">
+    <p>What is the drinking age?</p>
+    <p style="display: none;">The drinking age on Taniti is 18 and the drinking age is not strictly enforced.
+    </p>
+  </div>
+  <br>
+
+  <div class="faqConainer">
+    <p>Do residents speak English?</p>
+    <p style="display: none;">Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.
+    </p>
+  </div>
+  <br>
+
+  <div class="faqConainer">
+    <p>Is there a hospital?</p>
+    <p style="display: none;">There is one hospital and several clinics. The hospital has many multilingual employees.</p>
+  </div>
+  <br>
+
+  <div class="faqConainer">
+    <p>Is Taniti dangerous for toursits?</p>
+    <p style="display: none;">Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes. 
+    </p>
+  </div>
+  <br>
+
+  <div class="faqConainer">
+    <p>Do Taniti businesses close on Holidays?</p>
+    <p style="display: none;">Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</p>
+  </div>
+  <br>
+
+  <div class="faqConainer">
+    <p>What currency can I use?</p>
+    <p style="display: none;">Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.
+    </p>
+  </div>
+  <br>
+  <script>
+window.onload = function() {
+      const containers = document.querySelectorAll('.faqConainer');
+
+      containers.forEach(container => {
+        container.addEventListener('click', () => {
+          const secondElement = container.querySelector('p:nth-child(2)');
+
+            if (secondElement.style.display === 'none') { 
+              secondElement.style.display = 'block'; 
+            } else {
+              secondElement.style.display = 'none'; 
+            }
+
+        });
+      });
+    };
+    </script>
+
+  <footer>
+    <div id="newsletterContainer">
+      <div id="newsLetterForm">
+        <p>Sign up for the newsletter</p>
+        <p>Stay up to date on Taniti news and events!</p>
+        <form>
+          <input type="text" id="emailSignUpEmail" value="enter email address" onclick="clearNewslettertextfield()">
+          <input type="button" value="submit" onclick="submitNewsletter()">
+        </form>
+      </div>
+      <div id="newslettersignupconfirmation">
+        <p>Thank you!</p>
+      </div>
+    </div>
+
+    <div id="footerContactInfo">
+      <h3>Get in touch</h3>
+      <p>Phone Number: (123) 456-7890</p>
+      <p>Email Address: TanitiTourism@taniti.gov</p>
+    </div>
+  </footer>
+</body>
+</html>

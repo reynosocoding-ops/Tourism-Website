@@ -36,3 +36,43 @@ function search() {
       }
     }
   }
+
+  function slideShowForward(){
+    let slides = document.getElementsByClassName("imgSlide");
+    let i;
+    for(i = 0; i < slides.length;i++){
+      let currSlide = slides[i];
+      let nextSlide;
+      if (currSlide.style.display != "none"){
+        currSlide.style.display = "none";
+        if (i == 2){
+          nextSlide = slides[0];
+        }
+        else{
+          nextSlide = slides[i+1];
+        }
+        nextSlide.style.display = "inherit";
+        break;
+      }
+    }
+  }
+
+  function slideShowBack(){
+    let slides = document.getElementsByClassName("imgSlide");
+    let i;
+    for(i = 0; i < slides.length;i++){
+      let currSlide = slides[i];
+      let nextSlide;
+      if (currSlide.style.display != "none"){
+        currSlide.style.display = "none";
+        if (i == 0){
+          nextSlide = slides[2];
+        }
+        else{
+          nextSlide = slides[i-1];
+        }
+        nextSlide.style.display = "inherit";
+        break;
+      }
+    }
+  }

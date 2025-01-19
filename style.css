@@ -97,6 +97,11 @@ footer {
 
 }
 
+#navMagnifyingGlass:hover {
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
 #newslettersignupconfirmation {
     position: absolute;
     z-index: 1;
@@ -266,3 +271,95 @@ main {
 .transportationCat p {
     line-break: break-all;
 }
+
+.faqConainer {
+    text-align: center;
+    font-size: xx-large;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faqConainer p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.faqConainer p:first-child {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.faqConainer p:first-child:hover {
+    border: 4px solid black;
+    background-color: rgb(211, 211, 211);
+}
+
+.faqConainer p:nth-child(2) {
+    border: 1px solid black;
+    background-color: rgb(233, 232, 232);
+    border-radius: 10px;
+}
+
+#slideshow{
+    position: relative;
+}
+
+
+.imgSlide img{
+    border-radius: 10px;
+    border: 3px solid gray;
+    height: 800px;
+    width: 1000px;
+}
+
+.imgSlide p {
+    position: absolute;
+    top: 90%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size:xx-large ;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+
+.imgSlide{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: none;
+}
+
+
+#forwardArr {
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    background-color: rgba(255, 255, 255, 0.295);
+    border-radius: 5px;
+}
+
+#backArr {
+    position: absolute;
+    top: 50%;
+    right: 78%;
+    background-color: rgba(255, 255, 255, 0.295);
+    border-radius: 5px;
+}
+
+#forwardArr:hover{
+    background-color: rgba(87, 86, 86, 0.63);
+
+}
+
+#backArr:hover {
+    background-color: rgba(87, 86, 86, 0.63);
+}
+
+.slideContainer {
+    position: absolute;
+}
+
